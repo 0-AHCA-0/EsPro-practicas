@@ -1,0 +1,7 @@
+[
+  {"sucursal": "Quito Norte", "region": "Sierra", "ventas": 12450, "clientes": 320},
+  {"sucursal": "Quito Sur", "region": "Sierra", "ventas": 9870, "clientes": 265},
+  {"sucursal": "Guayaquil Centro", "region": "Costa", "ventas": 15200, "clientes": 410},
+  {"sucursal": "Guayaquil Norte", "region": "Costa", "ventas": 13980, "clientes": 372},
+  {"sucursal": "Cuenca", "region": "Sierra", "ventas": 8540, "clientes": 210}
+]
