@@ -1,3 +1,18 @@
+import pandas as pd 
+import json 
+
+
+with open('data/ventas.json') as f:
+    data = json.load(f)
+ventas = pd.json_normalize(data)    
+print("Vista previa de las primeras filas del DataFrame:")
+print(ventas.head())
+print("Dimensiones del DataFrame:")
+print(ventas.shape)
+print("Tipos de datos de cada columna:")
+print(ventas.dtypes)
+
+
 # leer_json.py — Cargar el reporte JSON de la API (Python)
 # Completa los pasos marcados con TODO. Ejecuta desde la raíz del repositorio:
 #   python scripts/leer_json.py

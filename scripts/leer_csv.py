@@ -1,7 +1,13 @@
-# leer_csv.py — Cargar el reporte CSV del ERP (Python)
-# Completa los pasos marcados con TODO. Ejecuta desde la raíz del repositorio:
-#   python scripts/leer_csv.py
+import pandas as pd
 
-# TODO 1: importa pandas y carga data/ventas.csv en un DataFrame
-# TODO 2: imprime las dimensiones (filas, columnas) del DataFrame
-# TODO 3: imprime las primeras filas para revisar las columnas
+ventas = pd.read_csv('data/ventas.csv')
+
+#Imprimir una vista previa de las primeras filas del DataFrame y sus dimensiones
+print("Vista previa de las primeras filas del DataFrame:")
+print(ventas.head)
+#Imprimir las dimensiones del DataFrame
+print("Dimensiones del DataFrame:")
+print(ventas.shape)
+#Imprimir los tipos de datos de cada columna del DataFrame
+print("Tipos de datos de cada columna:")
+print(ventas.dtypes)
