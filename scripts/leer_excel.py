@@ -1,7 +1,15 @@
-# leer_excel.py — Cargar el consolidado Excel de finanzas (Python)
-# Completa los pasos marcados con TODO. Ejecuta desde la raíz del repositorio:
-#   python scripts/leer_excel.py
+# Formato de archivo: UTF-8
+# leer_excel.py — Cargar el reporte Excel de la API (Python)
 
-# TODO 1: importa pandas
-# TODO 2: carga data/ventas.xlsx indicando la hoja correcta
-# TODO 3: imprime las dimensiones y las primeras filas
+import pandas as pd 
+ventas = pd.read_excel('data/ventas.xlsx')
+
+print("Primera vista del excel nya:")
+print(ventas.head())
+print("Dimensiones del DataFrame:")
+print(ventas.shape)
+print("Tipos de datos de cada columna:")
+print(ventas.dtypes)
+
+
+
